@@ -1,0 +1,14 @@
+{
+  "verbosity": "debug",
+  "hmif": {
+    "verbosity": "debug",
+    "type": "ccu",
+    "address": "172.16.23.130",
+    "listenAddress": "172.16.23.134",
+    "listenPort": 2010,
+    "listenPortBin": 2013
+  },
+  "web": {
+    "port": 8008
+  }
+}
