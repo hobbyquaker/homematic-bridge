@@ -9,7 +9,6 @@ var requirePlugins =    require('require-plugins');
 var status = {};
 
 config.hmif = config.hmif || {};
-if (config.hmif) config.hmif.verbosity = config.verbosity;
 
 log.setLevel(config.verbosity);
 log.info(pkg.name + ' ' + pkg.version + ' starting');
@@ -42,15 +41,20 @@ var pluginApi = {
             if (err) {
                 log.error('saveConfig', err);
             } else {
+                log.info('saved config');
                 log.debug('saveConfig', config);
             }
+            log.setLevel(conf.verbosity);
         });
+
 
     },
     restart: stop
 };
 
 var plugins = requirePlugins(pluginApi);
+
+plugins['hmbridge-web'].setPlugins(plugins);
 
 process.on('SIGINT', stop);
 process.on('SIGTERM', stop);

@@ -1,14 +1,16 @@
 {
   "verbosity": "debug",
   "hmif": {
-    "verbosity": "debug",
     "type": "ccu",
     "address": "172.16.23.130",
-    "listenAddress": "172.16.23.134",
-    "listenPort": 2010,
+    "listenAddress": "172.17.23.6",
+    "listenPort": 2011,
     "listenPortBin": 2013
   },
   "web": {
     "port": 8008
+  },
+  "mqtt": {
+    "url": "mqtt://127.0.0.1"
   }
 }

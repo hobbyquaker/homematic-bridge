@@ -1,6 +1,6 @@
 {
   "name": "hmbridge",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Pluggable homematic bridge",
   "main": "index.js",
   "preferGlobal": true,
