@@ -16,7 +16,8 @@
 
 #### Milestone 0.1
 
-[ ] webserver, pluggable webinterface, socket.io interface   
+[x] webserver, pluggable webinterface
+[ ] socket.io interface   
 
 #### Milestone 0.2
 
